@@ -27,11 +27,11 @@ tSec = 0
 
 
 def set_label_time(label):
-    if tSec > 10 and tMin > 10:
+    if tSec >= 10 and tMin >= 10:
         label.config(text="{:d} : {:d}".format(tMin, tSec))
-    elif tSec < 10 < tMin:
+    elif tSec < 10 and tMin >= 10:
         label.config(text="{:d} : 0{:d}".format(tMin, tSec))
-    elif tSec > 10 > tMin:
+    elif tSec >= 10 and tMin < 10:
         label.config(text="0{:d} : {:d}".format(tMin, tSec))
     elif tSec < 10 and tMin < 10:
         label.config(text="0{:d} : 0{:d}".format(tMin, tSec))
@@ -56,7 +56,7 @@ def update_label(label1):
     else:
         isWork = not isWork
         isStopped = True
-        label1["background"] = "yellow"
+        label1["background"] = "#FF8C00"
 
 
 # click the label for switch the working mode
@@ -90,7 +90,7 @@ if __name__ == "__main__":
     root = tkinter.Tk()
 
     # set the icon
-    img = tkinter.PhotoImage(file=r'clock.gif')
+    img = tkinter.PhotoImage(file=clock_icon_file)
     root.tk.call('wm', 'iconphoto', root._w, img)
 
     screenWid, screenHeight = root.maxsize()
