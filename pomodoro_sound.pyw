@@ -143,8 +143,8 @@ if __name__ == "__main__":
     Label1 = tkinter.Label(text="0{:d} : 0{:d}".format(tMin, tSec),
                            height=10, width=15)
     Label1.pack()
-    Label1.bind("<Button-1>", label_click)
-    Label1.bind("<Button-3>", label_right_click)
+    Label1.bind("<Button-3>", label_click)
+    Label1.bind("<Button-1>", label_right_click)
 
     isWork = True
     tMin = workTime
