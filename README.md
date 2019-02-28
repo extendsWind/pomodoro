@@ -42,6 +42,8 @@ The sound version may cause high cpu usage for the bug of pygame in some linux d
 - Manjaro 16.08 has the problem.
 
 
+- [ ] TODO log record not available now 
+
 ## other
 
 The timer can not pause for it may be unnecessary in pomodoro technech.

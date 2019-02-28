@@ -9,6 +9,7 @@ from pygame import mixer
 - [ ] record usage
 """
 
+
 """
 input parameters by user
 """
@@ -20,6 +21,13 @@ workTime = 25
 restTime = 5
 
 clock_icon_file = "clock.gif"  # better to use gif image
+# logFilename = "pomodoro.log"
+
+"""
+input parameters by user ----- End
+"""
+
+# logFile = open(logFilename, 'a+')
 
 
 # for sound
